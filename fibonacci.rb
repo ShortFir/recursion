@@ -1,22 +1,16 @@
 # frozen_string_literal: true
 
-# rubocop:disable Metrics/MethodLength
 def fibs(num)
   (0..num).each_with_object([]) do |index, array|
-    if index.zero?
-      num1 = 0
-      num2 = 0
-    elsif index == 1
-      num1 = 1
-      num2 = 0
-    else
-      num1 = array[index - 1]
-      num2 = array[index - 2]
-    end
-    array << num1 + num2
+    array << (index > 1 ? array[index - 1] + array[index - 2] : index)
   end
 end
-# rubocop:enable Metrics/MethodLength
+
+# def fib_hash(num)
+#   (0..num).each_with_object({}) do |index, hash|
+#     hash[index => (index > 1 ? hash[index - 1] + hash[index - 2] : index)]
+#   end
+# end
 
 def fibs_rec(num)
   num > 1 ? fibs_rec(num - 1) + fibs_rec(num - 2) : num
@@ -26,3 +20,5 @@ puts '--------------------', 'Fibonacci Iteration', '--------------------'
 (0..10).each { |num| puts "fibs #{num.to_s.rjust(2)} = #{fibs(num)}" }
 puts '--------------------', 'Fibonacci Recursion', '--------------------'
 (0..10).each { |num| puts "fibs_rec #{num.to_s.rjust(2)} = #{fibs_rec(num)}" }
+
+# (0..10).each { |num| puts "fibs hash #{num.to_s.rjust(2)} = #{fib_hash(num)}" }
