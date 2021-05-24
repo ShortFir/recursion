@@ -25,9 +25,7 @@ end
 10.times do
   array = gen_array(10)
   array_sorted = merge_sort(Array.new(array))
-  # sorted = true # false
   puts "#{array.to_s.ljust(40)} :SORT: #{array_sorted.to_s.ljust(41)}"
-  # print ":#{sorted.to_s.upcase}:", "\n"
 end
 
 # count = 0
@@ -36,13 +34,19 @@ end
 #   count += 1 if t.method_id == name
 # end
 
-# print "Merge Sort [5, 2, 1, 3, 6, 4] = #{merge_sort([5, 2, 1, 3, 6, 4])}", "\n", 'Recursion Calls = ', count, "\n", "\n"
+# print "Merge Sort [5, 2, 1, 3, 6, 4] = #{merge_sort([5, 2, 1, 3, 6, 4])}"
+# print "\n", 'Recursion Calls = ', count, "\n", "\n"
 # count = 0
-# print "Merge Sort [5, 2, 1, 3, 6, 4, 7, 8] = #{merge_sort([5, 2, 1, 3, 6, 4, 7, 8])}", "\n", 'Recursion Calls = ', count, "\n", "\n"
+# print "Merge Sort [5, 2, 1, 3, 6, 4, 7, 8] = #{merge_sort([5, 2, 1, 3, 6, 4, 7, 8])}", "\n"
+# print "\n", 'Recursion Calls = ', count, "\n", "\n"
 # count = 0
-# print "Merge Sort [10, 9, 5, 7, 2, 1, 8, 3, 6, 4] = #{merge_sort([10, 9, 5, 7, 2, 1, 8, 3, 6, 4])}", "\n", 'Recursion Calls = ', count, "\n", "\n"
+# print "Merge Sort [10, 9, 5, 7, 2, 1, 8, 3, 6, 4] = #{merge_sort([10, 9, 5, 7, 2, 1, 8, 3, 6, 4])}"
+# print "\n", 'Recursion Calls = ', count, "\n", "\n"
 # count = 0
-# print "Merge Sort [10, 9, 5, 7, 2, 12, 1, 8, 3, 6, 4, 11] = #{merge_sort([10, 9, 5, 7, 2, 12, 1, 8, 3, 6, 4, 11])}", "\n", 'Recursion Calls = ', count, "\n", "\n"
+# print "Merge Sort [10, 9, 5, 7, 2, 12, 1, 8, 3, 6, 4, 11] = #{merge_sort([10, 9, 5, 7, 2, 12, 1, 8, 3, 6, 4, 11])}"
+# print "\n", 'Recursion Calls = ', count, "\n", "\n"
 # count = 0
-# print "Merge Sort [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0] = #{merge_sort([14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0])}", "\n", 'Recursion Calls = ', count, "\n", "\n"
+# print "Merge Sort [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0] = "
+# print "#{merge_sort([14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0])}"
+# print "\n", 'Recursion Calls = ', count, "\n", "\n"
 # count = 0
